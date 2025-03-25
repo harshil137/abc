@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2c003e, #0d0030, #1a1a40);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+/* Headings and Text */
+h1 {
+    font-size: 3.5rem;
+    color: gold;
+    margin-top: 50px;
+    text-shadow: 0 0 25px gold;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+/* Page Layout */
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Buttons */
+button {
+    background: gold;
+    color: black;
+    padding: 15px 40px;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 3%;
+    box-shadow: 0 0 20px gold;
+}
+
+/* Video Section */
+.video-section {
+    width: 60%; /* Maintain the width at 60% */
+    height: 70vh; /* Height is set to 70% of the screen to fit vertically */
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 25px gold;
+    border: 5px solid gold;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Video Tag */
+.video-section video {
+    width: 100%; /* Make the video span 100% of the container's width */
+    height: 100%; /* Make the video span 100% of the container's height */
+    border-radius: 10px;
+    object-fit: contain; /* Maintain the video aspect ratio without cutting it off */
+}
+
+/* Letter Box */
+.letter-box {
+    background: gold;
+    padding: 25px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 20px gold;
+    text-shadow: 0 0 5px black;
+}
+
+.letter {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 60%;
+    box-shadow: 0 0 25px gold;
+}
+
+/* Gift Box */
+.gift-box {
+    background: gold;
+    padding: 25px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 20px gold;
+    margin-top: 30px;
+}
+
+/* Moons, Stars, and Flowers */
+.moon {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 6rem;
+    color: gold;
+    text-shadow: 0 0 30px gold;
+}
+
+.stars {
+    position: absolute;
+    top: 10%;
+    left: 2.3%;
+    font-size: 4rem;
+    color: gold;
+    text-shadow: 0 0 20px gold;
+}
+
+.flowers {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 3.5rem;
+    color: pink;
+    text-shadow: 0 0 20px pink;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .video-section {
+        width: 70%; /* Slightly larger for tablets */
+        height: 60vh;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-section {
+        width: 80%; /* For smaller devices */
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    button {
+        font-size: 1.3rem;
+        padding: 10px 25px;
+    }
+
+    .moon, .stars, .flowers {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-section {
+        width: 90%; /* For very small screens */
+        height: 45vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 8px 20px;
+    }
+
+    .moon, .stars, .flowers {
+        font-size: 2.5rem;
+    }
+}
