@@ -15,5 +15,5 @@ function showLetter() {
 }
 
 function goToGift() {
-    window.location.href = "https://www.zeptonow.com/pn/kitkat-grand-break,-4-fingers,-chocolate-coated-wafer/pvid/f7ee6357-dc9d-4de4-a77e-87f74225d3a9"; // Replace with your gift link
+    window.location.href = "https://www.zeptonow.com/pn/kitkat-grand-break,-4-fingers,-chocolate-coated-wafer-38.5-g-combo/pvid/ffaa4628-2d64-4dd5-9c67-dd7afeaef1d4"; // Replace with your gift link
 }
